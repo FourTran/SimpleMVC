@@ -3,7 +3,7 @@
 $host       = 'localhost';
 $user       = 'root';
 $password   = '';
-$db_name    = 'moneylover';
+$db_name    = 'mydb';
 
 mysql_connect($host, $user, $password, $db_name) or die('Can not connect database !');
 mysql_select_db($db_name);
