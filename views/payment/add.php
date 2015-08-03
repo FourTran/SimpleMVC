@@ -18,14 +18,3 @@
     </div>
   </div>
 </form>
-<script>
-    $('#frmPayment').submit(function() {
-        if ($('#inputTotal').val() > 10000000) {
-            if (!confirm("Bạn có chắc là số tiền chi tiêu trên 10 triệu ?")) {
-                $('#inputTotal').focus();
-                return false;
-            }
-        }
-        return true;
-    });
-</script>

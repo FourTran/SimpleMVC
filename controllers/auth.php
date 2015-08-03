@@ -6,7 +6,7 @@ function auth_login() {
     if (isPostRequest()) {
         $postData = postData();
         if (model('user')->authLogin($postData)) {
-            redirect('index.php?c=payment&m=list');
+            redirect('index.php?c=news&m=list');
         } else {
             $data['error'] = 'Login failed ! Please try again !';
         }
